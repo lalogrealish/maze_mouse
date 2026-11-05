@@ -2,7 +2,7 @@
 
 > 基于 ROS2 Humble 与 Gazebo Classic 11 的**地老鼠（MicroMouse）走迷宫**仿真项目：自建 URDF 模型、自定义矩形墙体迷宫、Python launch 一键启动，仅用 **2D 激光雷达 + 轮式里程计** 实现**左手法则（Left-Hand Rule）**迷宫求解。
 
-**课程代码：(2026-2027-1)-S0610350-01/2/3/4**
+**课程代码：(2026-2027-1)-S0610350-04**
 
 作者：SHI ZHENGHAO、ZHANG JIE
 
