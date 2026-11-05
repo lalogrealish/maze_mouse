@@ -1,0 +1,56 @@
+[INFO] [1793863529.820556887] [p2p_control]: P 控制启动，目标点 (1.00, 2.00)，kp_lin=0.8, kp_ang=1.8
+[INFO] [1793863530.183810118] [p2p_control]: 位置 (0.00, -0.00) 距目标 2.235 m  航向差 +45.2°  v=0.000 w=+1.200
+[INFO] [1793863530.735403133] [p2p_control]: 位置 (0.03, 0.03) 距目标 2.193 m  航向差 +14.3°  v=0.200 w=+0.449
+[INFO] [1793863531.238279242] [p2p_control]: 位置 (0.09, 0.11) 距目标 2.098 m  航向差 +5.9°  v=0.200 w=+0.184
+[INFO] [1793863531.788723589] [p2p_control]: 位置 (0.14, 0.20) 距目标 1.994 m  航向差 +2.2°  v=0.200 w=+0.069
+[INFO] [1793863532.333854288] [p2p_control]: 位置 (0.19, 0.29) 距目标 1.890 m  航向差 +0.8°  v=0.200 w=+0.024
+[INFO] [1793863532.883946987] [p2p_control]: 位置 (0.23, 0.39) 距目标 1.782 m  航向差 +0.2°  v=0.200 w=+0.007
+[INFO] [1793863533.383789761] [p2p_control]: 位置 (0.28, 0.48) 距目标 1.686 m  航向差 +0.0°  v=0.200 w=+0.000
+[INFO] [1793863533.934073597] [p2p_control]: 位置 (0.32, 0.57) 距目标 1.586 m  航向差 -0.1°  v=0.200 w=-0.002
+[INFO] [1793863534.437805943] [p2p_control]: 位置 (0.36, 0.66) 距目标 1.489 m  航向差 -0.1°  v=0.200 w=-0.003
+[INFO] [1793863534.986585029] [p2p_control]: 位置 (0.40, 0.74) 距目标 1.393 m  航向差 -0.1°  v=0.200 w=-0.004
+[INFO] [1793863535.532929331] [p2p_control]: 位置 (0.45, 0.84) 距目标 1.289 m  航向差 -0.1°  v=0.200 w=-0.004
+[INFO] [1793863536.034627755] [p2p_control]: 位置 (0.49, 0.92) 距目标 1.193 m  航向差 -0.1°  v=0.200 w=-0.004
+[INFO] [1793863536.582614940] [p2p_control]: 位置 (0.53, 1.01) 距目标 1.093 m  航向差 -0.1°  v=0.200 w=-0.004
+[INFO] [1793863537.085294594] [p2p_control]: 位置 (0.57, 1.10) 距目标 0.996 m  航向差 -0.1°  v=0.200 w=-0.004
+[INFO] [1793863537.635093713] [p2p_control]: 位置 (0.62, 1.19) 距目标 0.892 m  航向差 -0.1°  v=0.200 w=-0.005
+[INFO] [1793863538.184259115] [p2p_control]: 位置 (0.66, 1.29) 距目标 0.784 m  航向差 -0.1°  v=0.200 w=-0.005
+[INFO] [1793863538.686406652] [p2p_control]: 位置 (0.70, 1.37) 距目标 0.696 m  航向差 -0.1°  v=0.200 w=-0.005
+[INFO] [1793863539.238801451] [p2p_control]: 位置 (0.74, 1.47) 距目标 0.592 m  航向差 -0.2°  v=0.200 w=-0.005
+[INFO] [1793863539.807431165] [p2p_control]: 位置 (0.79, 1.55) 距目标 0.495 m  航向差 -0.2°  v=0.200 w=-0.005
+[INFO] [1793863540.341826666] [p2p_control]: 位置 (0.83, 1.64) 距目标 0.399 m  航向差 -0.2°  v=0.200 w=-0.005
+[INFO] [1793863540.836224512] [p2p_control]: 位置 (0.87, 1.73) 距目标 0.303 m  航向差 -0.2°  v=0.200 w=-0.006
+[INFO] [1793863541.387888347] [p2p_control]: 位置 (0.91, 1.82) 距目标 0.202 m  航向差 -0.2°  v=0.162 w=-0.006
+[INFO] [1793863541.940697480] [p2p_control]: 位置 (0.94, 1.88) 距目标 0.133 m  航向差 -0.2°  v=0.107 w=-0.006
+[INFO] [1793863542.483750702] [p2p_control]: 位置 (0.96, 1.92) 距目标 0.086 m  航向差 -0.2°  v=0.069 w=-0.005
+[INFO] [1793863542.983335069] [p2p_control]: 位置 (0.97, 1.95) 距目标 0.058 m  航向差 -0.1°  v=0.046 w=-0.003
+[INFO] [1793863543.533728860] [p2p_control]: 已到达目标点，终点误差 39.2 mm，航向误差 -0.1°
+Traceback (most recent call last):
+  File "/home/szh/maze_ws/build/maze_mouse/maze_mouse/p2p_control.py", line 104, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/szh/maze_ws/install/maze_mouse/lib/maze_mouse/p2p_control", line 33, in <module>
+    sys.exit(load_entry_point('maze-mouse', 'console_scripts', 'p2p_control')())
+  File "/home/szh/maze_ws/build/maze_mouse/maze_mouse/p2p_control.py", line 111, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

@@ -1,0 +1,40 @@
+[INFO] [1793863627.705777638] [reactive_avoid]: 反应式避障启动 | mode=turn | d_stop=0.45 m | d_slow=0.90 m
+[INFO] [1793863627.745236913] [reactive_avoid]: 状态 INIT -> FORWARD | 前 1.71 左 3.50 右 3.50
+[INFO] [1793863629.695750995] [reactive_avoid]: [FORWARD] 前 1.47 左 3.50 右 3.50 -> v=0.15 w=+0.00
+[INFO] [1793863631.698932128] [reactive_avoid]: [FORWARD] 前 1.19 左 3.50 右 3.50 -> v=0.15 w=+0.00
+[INFO] [1793863633.594893379] [reactive_avoid]: 状态 FORWARD -> SLOW | 前 0.89 左 3.50 右 3.50
+[INFO] [1793863633.696224137] [reactive_avoid]: [SLOW] 前 0.89 左 3.50 右 3.50 -> v=0.15 w=+0.00
+[INFO] [1793863635.698939245] [reactive_avoid]: [SLOW] 前 0.69 左 3.50 右 3.50 -> v=0.08 w=+0.00
+[INFO] [1793863637.705198321] [reactive_avoid]: [SLOW] 前 0.57 左 3.50 右 3.50 -> v=0.04 w=+0.00
+[INFO] [1793863639.695160374] [reactive_avoid]: [SLOW] 前 0.51 左 3.50 右 3.50 -> v=0.02 w=+0.00
+[INFO] [1793863641.696465737] [reactive_avoid]: [SLOW] 前 0.49 左 3.50 右 3.50 -> v=0.01 w=+0.00
+[INFO] [1793863643.697103354] [reactive_avoid]: [SLOW] 前 0.47 左 3.50 右 3.50 -> v=0.01 w=+0.00
+Traceback (most recent call last):
+  File "/home/szh/maze_ws/build/maze_mouse/maze_mouse/reactive_avoid.py", line 121, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/szh/maze_ws/install/maze_mouse/lib/maze_mouse/reactive_avoid", line 33, in <module>
+    sys.exit(load_entry_point('maze-mouse', 'console_scripts', 'reactive_avoid')())
+  File "/home/szh/maze_ws/build/maze_mouse/maze_mouse/reactive_avoid.py", line 128, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- colcon / ROS2 构建产物 ---
+build/
+install/
+log/
+
+# --- 编辑器 ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- 系统 ---
+.DS_Store
+Thumbs.db
+
+# --- 运行时产物 ---
+*.webm
+*.mp4
+*.bag

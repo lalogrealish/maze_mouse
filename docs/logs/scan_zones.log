@@ -1,0 +1,39 @@
+[INFO] [1793863423.971770313] [scan_zones]: 等待 /scan 数据 ...（若一直无输出，先检查仿真是否启动）
+[INFO] [1793863424.424983007] [scan_zones]: 前方 1.50 m | 左侧 0.27 m | 右侧 0.28 m | 后方 0.28 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863424.939269313] [scan_zones]: 前方 1.50 m | 左侧 0.28 m | 右侧 0.28 m | 后方 0.29 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863425.454631909] [scan_zones]: 前方 1.50 m | 左侧 0.29 m | 右侧 0.29 m | 后方 0.28 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863425.985776201] [scan_zones]: 前方 1.50 m | 左侧 0.28 m | 右侧 0.28 m | 后方 0.29 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863426.507324555] [scan_zones]: 前方 1.49 m | 左侧 0.28 m | 右侧 0.28 m | 后方 0.29 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863427.052515723] [scan_zones]: 前方 1.50 m | 左侧 0.28 m | 右侧 0.28 m | 后方 0.29 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863427.585201191] [scan_zones]: 前方 1.48 m | 左侧 0.28 m | 右侧 0.28 m | 后方 0.28 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863428.138249828] [scan_zones]: 前方 1.48 m | 左侧 0.27 m | 右侧 0.28 m | 后方 0.28 m (点数 360, 角度 -180°~180°)
+[INFO] [1793863428.667468780] [scan_zones]: 前方 1.48 m | 左侧 0.28 m | 右侧 0.29 m | 后方 0.28 m (点数 360, 角度 -180°~180°)
+Traceback (most recent call last):
+  File "/home/szh/maze_ws/build/maze_mouse/maze_mouse/scan_zones.py", line 68, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/szh/maze_ws/install/maze_mouse/lib/maze_mouse/scan_zones", line 33, in <module>
+    sys.exit(load_entry_point('maze-mouse', 'console_scripts', 'scan_zones')())
+  File "/home/szh/maze_ws/build/maze_mouse/maze_mouse/scan_zones.py", line 73, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
