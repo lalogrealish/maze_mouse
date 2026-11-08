@@ -132,6 +132,7 @@ ros2 run maze_mouse gen_maze_world --out src/maze_mouse/world/maze.world \
         ├── world/maze.world            5×5 迷宫（脚本生成）
         ├── world/empty.world           空旷场景 + 障碍柱
         ├── launch/maze_bringup.launch.py   一键启动
+        ├── tools/validate_maze.py      离线几何校验（numpy 射线求交，3 秒跑完全程）
         └── maze_mouse/
             ├── maze_mouse_core.py      纯算法核心（不依赖 ROS）
             ├── wall_follower.py        左墙跟随主控

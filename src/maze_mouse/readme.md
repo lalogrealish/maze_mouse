@@ -92,6 +92,7 @@ maze_mouse/
 ├── world/empty.world               空旷场景 + 障碍柱（避障实验用）
 ├── launch/maze_bringup.launch.py   一键启动（含 mission 参数）
 ├── config/                         RViz 配置存放目录（自行保存 maze.rviz）
+├── tools/validate_maze.py          离线几何校验（numpy 射线求交，3 秒跑完全程）
 └── maze_mouse/
     ├── maze_mouse_core.py          纯算法核心（不依赖 ROS，可离线单测）
     ├── open_loop_drive.py          开环控制（直行/转向）
@@ -112,19 +113,16 @@ maze_mouse/
 
 ## 7. 组员分工
 
-> 提交前按实际情况填写，写到"模块级"。
-
-| 姓名 | 负责模块 | 主要文件 |
-| --- | --- | --- |
-| ______（组长） | ______ | ______ |
-| ______ | ______ | ______ |
+| 姓名 | 学号 | 负责模块 | 主要文件 |
+| --- | --- | --- | --- |
+| 时正浩（组长） | 24062230 | 感知 + 决策 | `maze_mouse_core.py`（分区/状态机/P 控制）、`wall_follower.py`、`scan_zones.py`、`tools/validate_maze.py` |
+| 张洁（组员） | 24030208 | 建模 + 仿真环境 | `urdf/maze_mouse.urdf`、`world/*.world`、`launch/maze_bringup.launch.py`、`gen_maze_world.py` |
 
 ## 8. 开源地址
 
-```
-https://github.com/______/maze_mouse
+**https://github.com/lalogrealish/maze_mouse**
+
 课程代码：(2026-2027-1)-S0610350-04
-```
 
 ## 9. 说明
 
