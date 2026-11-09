@@ -97,10 +97,10 @@ omega = clamp(kp_turn * err, ±w_turn_max) # kp_turn=2.2, w_turn_max=1.00
 
 ```python
 v = clamp(kp_dist * dist_to_target_center, v_min, v_nom)   # 0.05 ~ 0.18 m/s
-omega = heading_hold(err_yaw) + k_center * (right - left)  # 侧墙居中
+omega = heading_hold(err_yaw) + k_center * (left - right)   # 侧墙居中
 ```
 
-`right − left` 作为居中修正项：左边更近就向右修，反之向左修；`k_center` 过大造成蛇形，过小压不住偏移（默认 0.80）。
+`left − right` 作为居中修正项：左边更近（left 小）则该项为负，车向右修，反之向左修；只在两侧都有墙时生效；`k_center` 过大造成蛇形，过小压不住偏移（默认 0.80）。
 
 ### 5.3 点到点 P 控制（`P2PController`）
 
