@@ -37,6 +37,7 @@ setup(
             'scan_zones = maze_mouse.scan_zones:main',
             'reactive_avoid = maze_mouse.reactive_avoid:main',
             'wall_follower = maze_mouse.wall_follower:main',
+            'traj_plot = maze_mouse.traj_plot:main',
             'gen_maze_world = maze_mouse.gen_maze_world:main',
         ],
     },

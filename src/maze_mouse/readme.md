@@ -101,6 +101,7 @@ maze_mouse/
     ├── scan_zones.py               激光雷达前/左/右/后分区
     ├── reactive_avoid.py           反应式避障
     ├── wall_follower.py            左墙跟随主控（状态机）
+    ├── traj_plot.py                实时轨迹可视化（/odom 逐点累积）
     └── gen_maze_world.py           迷宫 world 生成器
 ```
 

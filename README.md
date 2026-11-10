@@ -136,6 +136,7 @@ ros2 run maze_mouse gen_maze_world --out src/maze_mouse/world/maze.world \
         └── maze_mouse/
             ├── maze_mouse_core.py      纯算法核心（不依赖 ROS）
             ├── wall_follower.py        左墙跟随主控
+            ├── traj_plot.py            实时轨迹可视化（/odom 逐点累积）
             ├── scan_zones.py           雷达分区
             ├── reactive_avoid.py       反应式避障
             ├── p2p_control.py          点到点 P 控制
